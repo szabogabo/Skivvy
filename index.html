@@ -21,30 +21,70 @@
           <li><a data-toggle="tab" href="#hkeep">Housekeeper</a></li>
           <li><a data-toggle="tab" href="#gardn">Gardener</a></li>
         </ul>
-        <!--ul.nav.navbar-nav.navbar-right-->
-        <!--  li-->
-        <!--    a(data-toggle='tab',href='#login')-->
-        <!--      span.glyphicon.glyphicon-log-in-->
-        <!--      |  Login-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a data-toggle="tab" href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
       </div>
     </div>
   </nav>
-  <div class="row">
-    <div class="column col-sm-8 col-sm-offset-2">
-      <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <div class="well">HOME!</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="column col-sm-8 col-sm-offset-2">
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="well">
+<h1>Hello world!</h1>
+<p>A Skivvy egy vékonyklienses okosotthon vezérlő alkalmazás. Egy hobbiprojekt. Kliens oldalon egy böngészővel (asztali vagy mobil), ahol az alkalmazés az össze most divatos tehcnológiát használja (HTML5, CSS3, JQuery, Bootstrap, PugJS, SASS, AngularJS), szerver oldalon pedig Python és MySql egy Raspberry Pi-n, ami a külső eszközök vezérlését (I2C és GPIO) is elvégzi.</p>
+<h3>Tervezett funkciók</h3>
+<h4>Doorkeeper modul</h4>
+<p>A Doorkeeper modul feladatai között szerepel:
+  <ul>
+    <li>Csengő és videó kaputelefon kezelés</li>
+    <li>Bejárati kapu nyitás</li>
+    <li>Távvezérelhető autó bejárati kapu státusz lekérdezés és vezérlés</li>
+    <li>Házkörüli fényforrások státusz lekérdezése és vezérlése</li>
+  </ul>
+</p>
+<h4>Housekeeper modul</h4>
+<p>A Housekeeper tervezett feladatai:
+  <ul>
+    <li>Külső, belső hőmérséklet lekérdezése, megjelenítése</li>
+    <li>Programozható termosztát funkció</li>
+    <li>Belső fényforrások vezérlése</li>
+  </ul>
+</p>
+<h4>Gardener modul</h4>
+<p>A Gardener modul feladatai:
+  <ul>
+    <li>Kerti öntöző berendezés vezérlése</li>
+    <li>Kerti fényforrások vezérlése</li>
+  </ul>
+</p>
+            </div>
+          </div>
+          <div id="dkeep" class="tab-pane fade">
+            <div class="well">
+<h1>DoorKeeper</h1>
+<p>Fejlesztés alatt...</p>
+            </div>
+          </div>
+          <div id="hkeep" class="tab-pane fade">
+            <div class="well">
+<h1>HouseKeeper</h1>
+<p>Fejlesztés alatt...</p>
+            </div>
+          </div>
+          <div id="gardn" class="tab-pane fade">
+            <div class="well">
+<h1>Gardener</h1>
+<p>Fejlesztés alatt...</p>
+            </div>
+          </div>
+          <div id="login" class="tab-pane fade">
+            <div class="well">LOGIN!</div>
+          </div>
         </div>
-        <div id="dkeep" class="tab-pane fade">
-          <div class="well">Doorkeeper!</div>
-        </div>
-        <div id="hkeep" class="tab-pane fade">
-          <div class="well">Housekeeper!</div>
-        </div>
-        <div id="gardn" class="tab-pane fade">
-          <div class="well">Gardener!</div>
-        </div>
-        <!--.well.tab-pane.fade(id='login') LOGIN!-->
+        <div class="well text-center">&copy; 2016 GabE</div>
       </div>
     </div>
   </div>

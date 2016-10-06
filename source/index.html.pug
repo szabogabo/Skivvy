@@ -32,21 +32,28 @@ body
             a(data-toggle='tab',href='#hkeep') Housekeeper
           li
             a(data-toggle='tab',href='#gardn') Gardener
-        //ul.nav.navbar-nav.navbar-right
-        //  li
-        //    a(data-toggle='tab',href='#login')
-        //      span.glyphicon.glyphicon-log-in
-        //      |  Login
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(data-toggle='tab',href='#login')
+              span.glyphicon.glyphicon-log-in
+              |  Login
 
-  .row
-    .column.col-sm-8.col-sm-offset-2
-      .tab-content
-        .tab-pane.fade.in.active(id='home')
-          .well HOME!
-        .tab-pane.fade(id='dkeep')
-          .well Doorkeeper!
-        .tab-pane.fade(id='hkeep')
-          .well Housekeeper!
-        .tab-pane.fade(id='gardn')
-          .well Gardener!
-        //.well.tab-pane.fade(id='login') LOGIN!
+  .container-fluid
+    .row
+      .column.col-sm-8.col-sm-offset-2
+        .tab-content
+          .tab-pane.fade.in.active(id='home')
+            .well
+              include ../includes/home.inc.html
+          .tab-pane.fade(id='dkeep')
+            .well
+              include ../includes/dkeep.inc.html
+          .tab-pane.fade(id='hkeep')
+            .well
+              include ../includes/hkeep.inc.html
+          .tab-pane.fade(id='gardn')
+            .well
+              include ../includes/gardn.inc.html
+          .tab-pane.fade(id='login')
+            .well LOGIN!
+        .well.text-center &copy; 2016 GabE
