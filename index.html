@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <title>Skivvy v0.1a</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="skivvy.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#myNavBar" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><span class="skivvy-logo"><img src="images/skivvy.png" width="60px"></span> Skivvy v0.1a</a>
+      </div>
+      <div id="myNavBar" class="collapse navbar-collapse">
+        <ul class="nav navbar navbar-nav">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#dkeep">Doorkeeper</a></li>
+          <li><a data-toggle="tab" href="#hkeep">Housekeeper</a></li>
+          <li><a data-toggle="tab" href="#gardn">Gardener</a></li>
+        </ul>
+        <!--ul.nav.navbar-nav.navbar-right-->
+        <!--  li-->
+        <!--    a(data-toggle='tab',href='#login')-->
+        <!--      span.glyphicon.glyphicon-log-in-->
+        <!--      |  Login-->
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="column col-sm-8 col-sm-offset-2">
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <div class="well">HOME!</div>
+        </div>
+        <div id="dkeep" class="tab-pane fade">
+          <div class="well">Doorkeeper!</div>
+        </div>
+        <div id="hkeep" class="tab-pane fade">
+          <div class="well">Housekeeper!</div>
+        </div>
+        <div id="gardn" class="tab-pane fade">
+          <div class="well">Gardener!</div>
+        </div>
+        <!--.well.tab-pane.fade(id='login') LOGIN!-->
+      </div>
+    </div>
+  </div>
+</body>

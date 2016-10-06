@@ -1,0 +1,52 @@
+//output:../index.html, pretty:true
+doctype html
+html(lang='hu')
+  title Skivvy v0.1a
+  meta(charset='utf-8')
+  meta(name='viewport', content="width=device-width, initial-scale=1")
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet', href='skivvy.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+
+body
+
+  nav.navbar.navbar-inverse
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle(type='button',data-toggle='collapse',data-target='#myNavBar')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#')
+          span.skivvy-logo
+            img(src='images/skivvy.png', width='60px')
+          |  Skivvy v0.1a
+      .collapse.navbar-collapse(id='myNavBar')
+        ul.nav.navbar.navbar-nav
+          li.active
+            a(data-toggle='tab',href='#home') Home
+          li
+            a(data-toggle='tab',href='#dkeep') Doorkeeper
+          li
+            a(data-toggle='tab',href='#hkeep') Housekeeper
+          li
+            a(data-toggle='tab',href='#gardn') Gardener
+        //ul.nav.navbar-nav.navbar-right
+        //  li
+        //    a(data-toggle='tab',href='#login')
+        //      span.glyphicon.glyphicon-log-in
+        //      |  Login
+
+  .row
+    .column.col-sm-8.col-sm-offset-2
+      .tab-content
+        .tab-pane.fade.in.active(id='home')
+          .well HOME!
+        .tab-pane.fade(id='dkeep')
+          .well Doorkeeper!
+        .tab-pane.fade(id='hkeep')
+          .well Housekeeper!
+        .tab-pane.fade(id='gardn')
+          .well Gardener!
+        //.well.tab-pane.fade(id='login') LOGIN!
