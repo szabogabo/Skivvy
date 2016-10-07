@@ -1,3 +1,47 @@
 //output: ../includes/dkeep.inc.html, pretty:true
-h1 DoorKeeper
-p Fejlesztés alatt...
+.container-fluid
+  .row
+    .col.col-sm-12.text-center
+      .container-fluid
+        .row
+          .col.col-sm-12
+            .panel.panel-default
+              .panel-body
+                h1 DoorKeeper
+  .row
+    .col.col-sm-12
+        .container-fluid
+          .row
+            .col.col-sm-8
+              .panel.panel-default
+                .panel-heading.text-center
+                  h4 Bejárati kamera
+                .panel-body
+                  img.img-responsive.img-rounded(src="http://camera19.city.tarumizu.kagoshima.jp/nphMotionJpeg?resolution=640x480")
+            .col.col-sm-4
+              .panel.panel-default
+                .panel-heading.text-center
+                  h4 Vezérlők
+                .panel-body
+                  .row
+                    .col.col-sm-12
+                      h5 Járda világítás
+                      .btn-group.btn-group-justified
+                        a.btn.btn-primary(href='#') Ki
+                        a.btn.btn-warning(href='#') Be
+                  .row
+                    .col.col-sm-12
+                      h5 Terasz világítás
+                      .btn-group.btn-group-justified
+                        a.btn.btn-primary(href='#') Ki
+                        a.btn.btn-warning(href='#') Be
+                  .row
+                    .col.col-sm-12
+                      h5 Bejárati kapu
+                      button.btn.btn-success.btn-block(type="button") Nyitás
+                  .row
+                    .col.col-sm-12
+                      h5 Autó behajtó
+                      .btn-group.btn-group-justified
+                        a.btn.btn-danger(href='#') Zár
+                        a.btn.btn-success(href='#') Nyit
